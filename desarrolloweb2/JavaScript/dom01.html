@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    
+    <div class="content" id="content_first">
+        <p>contenido dinamico aqui</p>
+    </div>
+    <div class="content" id = "content_second" hidden>
+        <p>second section</p>
+    </div>
+<script>
+    let body = document.getElementsByTagName("body")[0];
+    //console.log(body.innerHTML);
+
+    let elementos=document.getElementsByTagName("*");
+    //console.log(elemtos);
+
+    for(elemento of elementos)
+        if (elemento.id == "content_first"){
+            elemento.innerHTML= "<p> Nuevo contenido</p>";
+            elemento.removeAttribute("hidden");
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body>
+<div class="content" id="content_first" hidden>
+    <p>First section.</p>
+</div><!-- #content_first -->
+<div class="content" id="content_second" hidden>
+    <p>Second section.</p>
+</div><!-- #content_second -->
+
+<script>
+let content_visible;
+switch ( Math.floor(Math.random() * 3) )
+    {
+    case 0:
+    content_visible = "#content_first";
+    break;
+    case 1:
+    content_visible = "#content_second";
+    break;
+    
+    }
+
+document.querySelector(content_visible).removeAttribute("hidden");
+</script>
+</div><!-- #content_third -->
+</body>
+</html>
+
