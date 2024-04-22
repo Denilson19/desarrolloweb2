@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registros</title>
+<link rel="stylesheet" type="text/css" href="css/ejercicio.css">
+</head>
+<body>
+
+<!-- Botones -->
+<button class="btn" onclick="toggleForm(1)">Registro de Alumno</button>
+<button class="btn" onclick="toggleForm(2)">Registro de Notas</button>
+<button class="btn" onclick="toggleForm(3)">Registro de Materias</button>
+
+<!-- Formularios -->
+<div id="form1" class="form-container">
+  <h2>Registro de Alumno</h2>
+  <form>
+    <!-- Campos del formulario de registro de alumno -->
+    <input type="text" placeholder="Nombre">
+    <input type="text" placeholder="Dirección">
+    <input type="tel" placeholder="Teléfono">
+    <button type="submit">Registrar Alumno</button>
+  </form>
+</div>
+
+<div id="form2" class="form-container">
+  <h2>Registro de Notas</h2>
+  <form>
+    <!-- Campos del formulario de registro de notas -->
+    <input type="text" placeholder="Nombre del Alumno">
+    <input type="text" placeholder="Materia">
+    <input type="number" placeholder="Nota">
+    <button type="submit">Registrar Nota</button>
+  </form>
+</div>
+
+<div id="form3" class="form-container">
+  <h2>Registro de Materias</h2>
+  <form>
+    <!-- Campos del formulario de registro de materias -->
+    <input type="text" placeholder="Código de Materia">
+    <input type="text" placeholder="Nombre de Materia">
+    <input type="text" placeholder="Semestre">
+    <button type="submit">Registrar Materia</button>
+  </form>
+</div>
+
+<script>
+function toggleForm(formNumber) {
+  var forms = document.querySelectorAll('.form-container');
+  forms.forEach(function(form) {
+    form.classList.remove('active');
+  });
+
+  document.getElementById('form' + formNumber).classList.add('active');
+}
+</script>
+
+</body>
+</html>

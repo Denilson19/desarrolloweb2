@@ -1,0 +1,30 @@
+/* Estilos para los botones */
+.btn {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 10px; /* Margen exterior */
+    cursor: pointer; /* Cursor */
+    border-radius: 8px; /* Radio de la esquina */
+  }
+  
+  /* Estilos para el botón al pasar el cursor */
+  .btn:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor */
+  }
+  
+  /* Estilos para los formularios */
+  .form-container {
+    display: none; /* Por defecto, ocultar el formulario */
+  }
+  
+  /* Estilos para mostrar el formulario activo */
+  .form-container.active {
+    display: block; /* Mostrar el formulario activo */
+  }
+  
