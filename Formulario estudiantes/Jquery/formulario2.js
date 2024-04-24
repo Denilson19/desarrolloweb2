@@ -1,3 +1,10 @@
+/*
+Descripcion: Formulario de Estudiante
+Desarollador: Denilson Noel Ledezma Condori
+Fecha: 2024-04-24
+Cambios: NInguno
+*/ 
+
 document.addEventListener("DOMContentLoaded", function() {
     // Función para obtener los estudiantes del almacenamiento local y mostrarlos en la tabla
     function mostrarEstudiantes() {
